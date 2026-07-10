@@ -10,7 +10,7 @@ type BudgetFeature = {
 const MAIN_FEATURES: BudgetFeature[] = [
   {
     id: "scanner",
-    name: "Scanner laser",
+    name: "Lectura laser de productos",
     monthlyPrice: 200,
     detail: "Registrar productos mediante scanner laser para agilizar la caja."
   },
@@ -129,7 +129,7 @@ export function App() {
           <div className="presupuesto-card__header">
             <div>
               <p className="presupuesto-card__eyebrow">Aparte</p>
-              <h2>Equipamiento</h2>
+              <h2>Equipamiento (scanner laser)</h2>
             </div>
             <button
               type="button"
