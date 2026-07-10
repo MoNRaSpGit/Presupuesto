@@ -37,7 +37,7 @@ export default defineConfig(({ mode }) => {
   );
 
   return {
-    base: isGithubPagesBuild ? "/frontend-presupuesto/" : "/",
+    base: isGithubPagesBuild ? "/Presupuesto/" : "/",
     plugins: [
       react(),
       {
