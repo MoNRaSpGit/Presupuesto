@@ -64,6 +64,7 @@ export function App() {
         <article className="presupuesto-intro">
           <p className="presupuesto-kicker">SaaS Pro</p>
           <h1>Presupuesto</h1>
+          <p className="presupuesto-intro__note">Planes claros, extras opcionales y valores faciles de presentar.</p>
         </article>
 
         <article className="presupuesto-card">
