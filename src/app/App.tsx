@@ -70,9 +70,13 @@ export function App() {
           <div className="presupuesto-card__header">
             <div />
             <div className="presupuesto-total-pill">
-              <span>Total base</span>
+              <span>Total del sistema por mes</span>
               <strong>{formatCurrency(MONTHLY_TOTAL)}</strong>
             </div>
+          </div>
+
+          <div className="presupuesto-section-label">
+            <span>Incluye</span>
           </div>
 
           <div className="presupuesto-feature-list">
