@@ -1,0 +1,241 @@
+:root {
+  font-family: Inter, "Segoe UI", sans-serif;
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.presupuesto-shell {
+  min-height: 100vh;
+  padding: 24px;
+  display: grid;
+  background:
+    radial-gradient(circle at top left, rgba(59, 130, 246, 0.14), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(16, 185, 129, 0.12), transparent 22%),
+    linear-gradient(180deg, #eff6ff 0%, #f8fafc 100%);
+}
+
+.presupuesto-layout {
+  width: min(980px, 100%);
+  margin: 0 auto;
+  display: grid;
+  gap: 18px;
+  align-content: start;
+}
+
+.presupuesto-intro,
+.presupuesto-card {
+  width: 100%;
+  padding: 28px;
+  border: 1px solid #dbe4ee;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
+}
+
+.presupuesto-card--secondary {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(247, 250, 252, 0.96) 100%);
+}
+
+.presupuesto-kicker {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.presupuesto-intro h1 {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.presupuesto-copy {
+  margin: 0;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.presupuesto-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.presupuesto-card__header h2 {
+  margin: 4px 0 0;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.presupuesto-card__eyebrow {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.presupuesto-total-pill {
+  min-width: 150px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #dbeafe 0%, #eff6ff 100%);
+  border: 1px solid #bfdbfe;
+  display: grid;
+  gap: 4px;
+}
+
+.presupuesto-total-pill span,
+.presupuesto-price-card span,
+.presupuesto-equipment-card span {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.presupuesto-total-pill strong,
+.presupuesto-price-card strong,
+.presupuesto-equipment-card strong {
+  font-size: 1.6rem;
+  color: #0f172a;
+}
+
+.presupuesto-feature-list {
+  display: grid;
+  gap: 12px;
+}
+
+.presupuesto-feature-row {
+  border: 1px solid #dbe4ee;
+  border-radius: 16px;
+  background: #fff;
+  padding: 14px 16px;
+}
+
+.presupuesto-feature-row__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.presupuesto-feature-row__main strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 1rem;
+}
+
+.presupuesto-feature-row__main span {
+  color: #334155;
+  font-weight: 700;
+}
+
+.presupuesto-detail-button {
+  border: 1px solid #d1d9e6;
+  border-radius: 999px;
+  background: #fff;
+  color: #0f172a;
+  padding: 8px 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+}
+
+.presupuesto-detail-button:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+  transform: translateY(-1px);
+}
+
+.presupuesto-feature-detail {
+  margin: 12px 0 0;
+  color: #475569;
+  line-height: 1.55;
+}
+
+.presupuesto-pricing-grid,
+.presupuesto-equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.presupuesto-equipment-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 0;
+}
+
+.presupuesto-price-card,
+.presupuesto-equipment-card {
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px solid #dbe4ee;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  display: grid;
+  gap: 8px;
+}
+
+.presupuesto-price-card.is-primary {
+  border-color: #93c5fd;
+  background: linear-gradient(180deg, #eff6ff 0%, #dbeafe 100%);
+}
+
+.presupuesto-price-card small,
+.presupuesto-equipment-card small {
+  color: #64748b;
+  line-height: 1.45;
+}
+
+@media (max-width: 768px) {
+  .presupuesto-shell {
+    padding: 16px;
+  }
+
+  .presupuesto-intro,
+  .presupuesto-card {
+    padding: 20px;
+  }
+
+  .presupuesto-card__header,
+  .presupuesto-feature-row__main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .presupuesto-total-pill {
+    width: 100%;
+  }
+
+  .presupuesto-pricing-grid,
+  .presupuesto-equipment-grid {
+    grid-template-columns: 1fr;
+  }
+}
