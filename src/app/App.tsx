@@ -48,7 +48,7 @@ const EQUIPMENT_OPTIONS = {
 
 const MONTHLY_TOTAL = MAIN_FEATURES.reduce((total, feature) => total + feature.monthlyPrice, 0);
 const SIX_MONTH_TOTAL = 5000;
-const ONE_TIME_TOTAL_USD = 490;
+const ONE_TIME_TOTAL_USD = 650;
 
 function formatCurrency(value: number, currency = "$") {
   return `${currency} ${value}`;
@@ -64,18 +64,11 @@ export function App() {
         <article className="presupuesto-intro">
           <p className="presupuesto-kicker">SaaS Pro</p>
           <h1>Presupuesto</h1>
-          <p className="presupuesto-copy">
-            Propuesta simple para presentar el servicio, los modulos incluidos y las opciones de pago sin cargar la
-            pantalla de texto.
-          </p>
         </article>
 
         <article className="presupuesto-card">
           <div className="presupuesto-card__header">
-            <div>
-              <p className="presupuesto-card__eyebrow">Plan mensual</p>
-              <h2>Titulo presupuesto</h2>
-            </div>
+            <div />
             <div className="presupuesto-total-pill">
               <span>Total base</span>
               <strong>{formatCurrency(MONTHLY_TOTAL)}</strong>
